@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569833AE99CC6992589203F1 /* Pods_CHI_AR_Employees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */; };
 		CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65B21D102E00091FC9D /* AppDelegate.swift */; };
 		CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA65D21D102E00091FC9D /* art.scnassets */; };
 		CE3FA66021D102E00091FC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65F21D102E00091FC9D /* ViewController.swift */; };
 		CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66121D102E00091FC9D /* Main.storyboard */; };
-		CE3FA66521D102E00091FC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66421D102E00091FC9D /* Assets.xcassets */; };
 		CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHI_AR_Employees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A018A2573B0F04709202263A /* Pods-CHI-AR-Employees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI-AR-Employees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees.debug.xcconfig"; sourceTree = "<group>"; };
 		CE3FA65821D102E00091FC9D /* CHI-AR-Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CHI-AR-Employees.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3FA65B21D102E00091FC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3FA65D21D102E00091FC9D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CE3FA65F21D102E00091FC9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE3FA66221D102E00091FC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE3FA66421D102E00091FC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3FA66721D102E00091FC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3FA66921D102E00091FC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6F29E721D10501009688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI-AR-Employees.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569833AE99CC6992589203F1 /* Pods_CHI_AR_Employees.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A798CE4D2A063E46D861CAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C077A8830007BD5D16C6E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A018A2573B0F04709202263A /* Pods-CHI-AR-Employees.debug.xcconfig */,
+				F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE3FA64F21D102DF0091FC9D = {
 			isa = PBXGroup;
 			children = (
 				CE3FA65A21D102E00091FC9D /* CHI-AR-Employees */,
 				CE3FA65921D102E00091FC9D /* Products */,
+				77C077A8830007BD5D16C6E3 /* Pods */,
+				2A798CE4D2A063E46D861CAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +79,79 @@
 		CE3FA65A21D102E00091FC9D /* CHI-AR-Employees */ = {
 			isa = PBXGroup;
 			children = (
-				CE3FA65B21D102E00091FC9D /* AppDelegate.swift */,
-				CE3FA65D21D102E00091FC9D /* art.scnassets */,
-				CE3FA65F21D102E00091FC9D /* ViewController.swift */,
-				CE3FA66121D102E00091FC9D /* Main.storyboard */,
-				CE3FA66421D102E00091FC9D /* Assets.xcassets */,
-				CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */,
 				CE3FA66921D102E00091FC9D /* Info.plist */,
+				CE6F29EA21D1054C009688C7 /* Services */,
+				CE6F29E921D10521009688C7 /* Application */,
+				CE6F29E821D10510009688C7 /* Storyboards */,
+				CE6F29E621D104EB009688C7 /* Resources */,
+				CE6F29E521D104DE009688C7 /* Modules */,
 			);
 			path = "CHI-AR-Employees";
+			sourceTree = "<group>";
+		};
+		CE6F29E521D104DE009688C7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA65F21D102E00091FC9D /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE6F29E621D104EB009688C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F29E721D10501009688C7 /* Assets.xcassets */,
+				CE3FA65D21D102E00091FC9D /* art.scnassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE6F29E821D10510009688C7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA66121D102E00091FC9D /* Main.storyboard */,
+				CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE6F29E921D10521009688C7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA65B21D102E00091FC9D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE6F29EA21D1054C009688C7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F29ED21D10571009688C7 /* NetworkService */,
+				CE6F29EC21D1055E009688C7 /* LocationService */,
+				CE6F29EB21D10555009688C7 /* FirebaseService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE6F29EB21D10555009688C7 /* FirebaseService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirebaseService;
+			sourceTree = "<group>";
+		};
+		CE6F29EC21D1055E009688C7 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		CE6F29ED21D10571009688C7 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE3FA66C21D102E00091FC9D /* Build configuration list for PBXNativeTarget "CHI-AR-Employees" */;
 			buildPhases = (
+				99F0FA7AD5BC5CED5EC6673B /* [CP] Check Pods Manifest.lock */,
 				CE3FA65421D102E00091FC9D /* Sources */,
 				CE3FA65521D102E00091FC9D /* Frameworks */,
 				CE3FA65621D102E00091FC9D /* Resources */,
+				8E2EAC629936DFB90E137DF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,12 +216,60 @@
 			files = (
 				CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */,
 				CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */,
-				CE3FA66521D102E00091FC9D /* Assets.xcassets in Resources */,
 				CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E2EAC629936DFB90E137DF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F0FA7AD5BC5CED5EC6673B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHI-AR-Employees-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE3FA65421D102E00091FC9D /* Sources */ = {
@@ -284,6 +421,7 @@
 		};
 		CE3FA66D21D102E00091FC9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A018A2573B0F04709202263A /* Pods-CHI-AR-Employees.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +441,7 @@
 		};
 		CE3FA66E21D102E00091FC9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
