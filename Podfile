@@ -8,5 +8,6 @@ target 'CHI-AR-Employees' do
   # Pods for CHI-AR-Employees
 
   pod 'Firebase'
+  pod 'Firebase/Database'
 
 end

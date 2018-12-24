@@ -13,6 +13,10 @@
 		CE3FA66021D102E00091FC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65F21D102E00091FC9D /* ViewController.swift */; };
 		CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66121D102E00091FC9D /* Main.storyboard */; };
 		CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */; };
+		CE6F29EF21D11122009688C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */; };
+		CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F121D141E4009688C7 /* LocationManager.swift */; };
+		CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F321D168A3009688C7 /* FirebaseService.swift */; };
+		CE6F29F821D1692E009688C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F721D1692E009688C7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		CE3FA66721D102E00091FC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3FA66921D102E00091FC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6F29E721D10501009688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE6F29F121D141E4009688C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CE6F29F321D168A3009688C7 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		CE6F29F721D1692E009688C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI-AR-Employees.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,8 @@
 		CE3FA65A21D102E00091FC9D /* CHI-AR-Employees */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F29F521D16917009688C7 /* Models */,
+				CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */,
 				CE3FA66921D102E00091FC9D /* Info.plist */,
 				CE6F29EA21D1054C009688C7 /* Services */,
 				CE6F29E921D10521009688C7 /* Application */,
@@ -136,6 +146,7 @@
 		CE6F29EB21D10555009688C7 /* FirebaseService */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F29F321D168A3009688C7 /* FirebaseService.swift */,
 			);
 			path = FirebaseService;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 		CE6F29EC21D1055E009688C7 /* LocationService */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F29F021D141CC009688C7 /* LocationManager */,
 			);
 			path = LocationService;
 			sourceTree = "<group>";
@@ -152,6 +164,30 @@
 			children = (
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CE6F29F021D141CC009688C7 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F29F121D141E4009688C7 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		CE6F29F521D16917009688C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F29F621D16922009688C7 /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE6F29F621D16922009688C7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F29F721D1692E009688C7 /* User.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +252,7 @@
 			files = (
 				CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */,
 				CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */,
+				CE6F29EF21D11122009688C7 /* GoogleService-Info.plist in Resources */,
 				CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +270,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -240,6 +278,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +317,9 @@
 			files = (
 				CE3FA66021D102E00091FC9D /* ViewController.swift in Sources */,
 				CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */,
+				CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */,
+				CE6F29F821D1692E009688C7 /* User.swift in Sources */,
+				CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
