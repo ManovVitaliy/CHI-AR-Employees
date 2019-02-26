@@ -24,6 +24,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSceneView()
+        //test database
 //        Database.database().reference().child("newKey").updateChildValues(["a": "b"])
 
         LocationManager.sharedInstanse.locationManager(delegate: self)
@@ -86,9 +87,9 @@ extension ViewController: CLLocationManagerDelegate {
         
         
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue:CLLocationCoordinate2D = (manager.location?.coordinate)!
-//        print("Current Locations = \(locValue.latitude) \(locValue.longitude)")
-        user.currentCoordinate = locValue
+        let locValue: CLLocation = manager.location!
+        print("Current Locations = \(locValue.coordinate.latitude) \(locValue.coordinate.longitude) \(locValue.altitude)")
+        user.currentLocation = locValue
         FirebaseService.sharedInstance.updateUserLocation(user: user) {
             print("user was updated")
         }
