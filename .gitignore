@@ -22,6 +22,7 @@ xcuserdata/
 *.xcuserstate
 *.DS_Store
 *.xcbkptlist
+*.podfile
 
 ## Obj-C/Swift specific
 *.hmap
