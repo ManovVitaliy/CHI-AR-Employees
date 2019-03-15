@@ -28,8 +28,8 @@ class FirebaseService: NSObject {
     //MARK: - UPDATE
     func updateUserLocation(user: User, completion: @escaping(() -> Void)) {
         let firebaseUser = Database.database().reference().child(keyUser).child(String(user.name))
-        let dict = [User.keyUserLatitude: user.currentCoordinate.latitude,
-                    User.keyUserLongitude: user.currentCoordinate.longitude]
+        let dict = [User.keyUserLatitude: user.currentLocation.coordinate.latitude,
+                    User.keyUserLongitude: user.currentLocation.coordinate.longitude]
         firebaseUser.updateChildValues(dict)
         completion()
     }

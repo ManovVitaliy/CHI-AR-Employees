@@ -10,9 +10,11 @@
 		569833AE99CC6992589203F1 /* Pods_CHI_AR_Employees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */; };
 		CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65B21D102E00091FC9D /* AppDelegate.swift */; };
 		CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA65D21D102E00091FC9D /* art.scnassets */; };
-		CE3FA66021D102E00091FC9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65F21D102E00091FC9D /* ViewController.swift */; };
+		CE3FA66021D102E00091FC9D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65F21D102E00091FC9D /* ARViewController.swift */; };
 		CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66121D102E00091FC9D /* Main.storyboard */; };
 		CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */; };
+		CE57EAAA222594D800DC6F7F /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAA9222594D800DC6F7F /* ARModel.swift */; };
+		CE57EAAC222594E800DC6F7F /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAAB222594E800DC6F7F /* ARViewModel.swift */; };
 		CE6F29EF21D11122009688C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */; };
 		CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F121D141E4009688C7 /* LocationManager.swift */; };
 		CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F321D168A3009688C7 /* FirebaseService.swift */; };
@@ -25,10 +27,12 @@
 		CE3FA65821D102E00091FC9D /* CHI-AR-Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CHI-AR-Employees.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3FA65B21D102E00091FC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3FA65D21D102E00091FC9D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		CE3FA65F21D102E00091FC9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE3FA65F21D102E00091FC9D /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		CE3FA66221D102E00091FC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3FA66721D102E00091FC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3FA66921D102E00091FC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE57EAA9222594D800DC6F7F /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		CE57EAAB222594E800DC6F7F /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		CE6F29E721D10501009688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE6F29F121D141E4009688C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -99,10 +103,44 @@
 			path = "CHI-AR-Employees";
 			sourceTree = "<group>";
 		};
+		CE57EAA52225938C00DC6F7F /* ARViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE57EAA8222593D000DC6F7F /* Model */,
+				CE57EAA7222593C900DC6F7F /* View */,
+				CE57EAA6222593AE00DC6F7F /* ViewModel */,
+			);
+			path = ARViewModule;
+			sourceTree = "<group>";
+		};
+		CE57EAA6222593AE00DC6F7F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE57EAAB222594E800DC6F7F /* ARViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE57EAA7222593C900DC6F7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3FA65F21D102E00091FC9D /* ARViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE57EAA8222593D000DC6F7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE57EAA9222594D800DC6F7F /* ARModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE6F29E521D104DE009688C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CE3FA65F21D102E00091FC9D /* ViewController.swift */,
+				CE57EAA52225938C00DC6F7F /* ARViewModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -315,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3FA66021D102E00091FC9D /* ViewController.swift in Sources */,
+				CE57EAAC222594E800DC6F7F /* ARViewModel.swift in Sources */,
+				CE57EAAA222594D800DC6F7F /* ARModel.swift in Sources */,
+				CE3FA66021D102E00091FC9D /* ARViewController.swift in Sources */,
 				CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */,
 				CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */,
 				CE6F29F821D1692E009688C7 /* User.swift in Sources */,
@@ -467,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7X65DZ2CML;
+				DEVELOPMENT_TEAM = L3QAWRZFYR;
 				INFOPLIST_FILE = "CHI-AR-Employees/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,7 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7X65DZ2CML;
+				DEVELOPMENT_TEAM = L3QAWRZFYR;
 				INFOPLIST_FILE = "CHI-AR-Employees/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

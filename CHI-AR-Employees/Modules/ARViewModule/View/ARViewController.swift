@@ -12,13 +12,14 @@ import ARKit
 import FirebaseDatabase
 import CoreLocation
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ARViewController: UIViewController, ARSCNViewDelegate {
 
     //MARK: - outlets
     @IBOutlet var sceneView: ARSCNView!
     
     //MARK: - properties
     var user = User()
+    private var arViewModel: ARViewModel = ARViewModel() 
     
     //MARK: - view controller's life cycle
     override func viewDidLoad() {
@@ -80,7 +81,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 }
 
-extension ViewController: CLLocationManagerDelegate {
+extension ARViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("location error is = \(error.localizedDescription)")
     }
