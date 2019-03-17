@@ -6,7 +6,6 @@
 //  Copyright © 2018 Vitaliy Manov. All rights reserved.
 //
 
-import UIKit
 import CoreLocation
 
 class LocationManager: NSObject {
@@ -18,7 +17,7 @@ class LocationManager: NSObject {
         locationManager = CLLocationManager()
         locationManager?.delegate = delegate
         locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager?.distanceFilter = 0.2
+        locationManager?.distanceFilter = 1.0
         locationManager?.requestWhenInUseAuthorization()
         locationManager?.startUpdatingLocation()
     }

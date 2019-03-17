@@ -15,10 +15,10 @@
 		CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */; };
 		CE57EAAA222594D800DC6F7F /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAA9222594D800DC6F7F /* ARModel.swift */; };
 		CE57EAAC222594E800DC6F7F /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAAB222594E800DC6F7F /* ARViewModel.swift */; };
-		CE6F29EF21D11122009688C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */; };
 		CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F121D141E4009688C7 /* LocationManager.swift */; };
 		CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F321D168A3009688C7 /* FirebaseService.swift */; };
 		CE6F29F821D1692E009688C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F721D1692E009688C7 /* User.swift */; };
+		CE866594223C52D200B3D39A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE866593223C52D200B3D39A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		CE57EAA9222594D800DC6F7F /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		CE57EAAB222594E800DC6F7F /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		CE6F29E721D10501009688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE6F29F121D141E4009688C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		CE6F29F321D168A3009688C7 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CE6F29F721D1692E009688C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE866593223C52D200B3D39A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI-AR-Employees.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				CE6F29F521D16917009688C7 /* Models */,
-				CE6F29EE21D11122009688C7 /* GoogleService-Info.plist */,
 				CE3FA66921D102E00091FC9D /* Info.plist */,
+				CE866593223C52D200B3D39A /* GoogleService-Info.plist */,
 				CE6F29EA21D1054C009688C7 /* Services */,
 				CE6F29E921D10521009688C7 /* Application */,
 				CE6F29E821D10510009688C7 /* Storyboards */,
@@ -289,8 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */,
+				CE866594223C52D200B3D39A /* GoogleService-Info.plist in Resources */,
 				CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */,
-				CE6F29EF21D11122009688C7 /* GoogleService-Info.plist in Resources */,
 				CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vm.CHI-AR-Employees";
+				PRODUCT_BUNDLE_IDENTIFIER = chiAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "vm.CHI-AR-Employees";
+				PRODUCT_BUNDLE_IDENTIFIER = chiAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

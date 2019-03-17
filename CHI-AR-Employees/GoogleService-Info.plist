@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>848549773939-54ihdrqgv9an6iqfpnr6ue2lu95krl8j.apps.googleusercontent.com</string>
+	<string>928571629830-c3a71p1uvfv6uplt4lhldvmohk3jm5vf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.848549773939-54ihdrqgv9an6iqfpnr6ue2lu95krl8j</string>
+	<string>com.googleusercontent.apps.928571629830-c3a71p1uvfv6uplt4lhldvmohk3jm5vf</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCt2vGMhs3Er620BbwbaNM73NHobg9qJVM</string>
+	<string>AIzaSyCxqbDL4tp64Fh4gdJ65hJe6x1DiNqEJqo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>848549773939</string>
+	<string>928571629830</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>chi-ar-employees</string>
+	<string>chiAR</string>
 	<key>PROJECT_ID</key>
-	<string>chi-ar-employees</string>
+	<string>chiar-53925</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chi-ar-employees.appspot.com</string>
+	<string>chiar-53925.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:848549773939:ios:0e45b0cabed5d549</string>
+	<string>1:928571629830:ios:c927ba43a7ec9130</string>
 	<key>DATABASE_URL</key>
-	<string>https://chi-ar-employees.firebaseio.com</string>
+	<string>https://chiar-53925.firebaseio.com</string>
 </dict>
 </plist>

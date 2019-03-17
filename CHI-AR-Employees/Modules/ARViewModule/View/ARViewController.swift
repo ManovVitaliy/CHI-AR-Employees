@@ -9,8 +9,6 @@
 import UIKit
 import SceneKit
 import ARKit
-import FirebaseDatabase
-import CoreLocation
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
@@ -27,20 +25,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         setupSceneView()
         //test database
 //        Database.database().reference().child("newKey").updateChildValues(["a": "b"])
-
-        LocationManager.sharedInstanse.locationManager(delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
-        user = User()
-        user.name = "Manov Vitaliy"
-        user.id = 1
-        FirebaseService.sharedInstance.postUser(user: user) {
-            print("user was created")
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -78,21 +68,5 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
-    }
-}
-
-extension ARViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("location error is = \(error.localizedDescription)")
-    }
-        
-        
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue: CLLocation = manager.location!
-        print("Current Locations = \(locValue.coordinate.latitude) \(locValue.coordinate.longitude) \(locValue.altitude)")
-        user.currentLocation = locValue
-        FirebaseService.sharedInstance.updateUserLocation(user: user) {
-            print("user was updated")
-        }
     }
 }
