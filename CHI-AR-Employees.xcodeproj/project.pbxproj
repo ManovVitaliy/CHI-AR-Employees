@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		569833AE99CC6992589203F1 /* Pods_CHI_AR_Employees.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */; };
+		CE2F0ED42241896A00F2225A /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ECA2241896A00F2225A /* SceneLocationView.swift */; };
+		CE2F0ED52241896A00F2225A /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ECB2241896A00F2225A /* SceneLocationEstimate+Extensions.swift */; };
+		CE2F0ED62241896A00F2225A /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ECC2241896A00F2225A /* CLLocation+Extensions.swift */; };
+		CE2F0ED82241896A00F2225A /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ECE2241896A00F2225A /* LocationNode.swift */; };
+		CE2F0ED92241896A00F2225A /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ECF2241896A00F2225A /* FloatingPoint+Radians.swift */; };
+		CE2F0EDA2241896A00F2225A /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ED02241896A00F2225A /* CGPoint+Extensions.swift */; };
+		CE2F0EDB2241896A00F2225A /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ED12241896A00F2225A /* SceneLocationEstimate.swift */; };
+		CE2F0EDC2241896A00F2225A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ED22241896A00F2225A /* LocationManager.swift */; };
+		CE2F0EDD2241896A00F2225A /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F0ED32241896A00F2225A /* SCNVector3+Extensions.swift */; };
+		CE2F0EDE22418EC700F2225A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6F29E721D10501009688C7 /* Assets.xcassets */; };
 		CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65B21D102E00091FC9D /* AppDelegate.swift */; };
 		CE3FA65E21D102E00091FC9D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA65D21D102E00091FC9D /* art.scnassets */; };
 		CE3FA66021D102E00091FC9D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FA65F21D102E00091FC9D /* ARViewController.swift */; };
@@ -15,7 +25,7 @@
 		CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3FA66621D102E00091FC9D /* LaunchScreen.storyboard */; };
 		CE57EAAA222594D800DC6F7F /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAA9222594D800DC6F7F /* ARModel.swift */; };
 		CE57EAAC222594E800DC6F7F /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57EAAB222594E800DC6F7F /* ARViewModel.swift */; };
-		CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F121D141E4009688C7 /* LocationManager.swift */; };
+		CE6F29F221D141E4009688C7 /* LocationManagerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F121D141E4009688C7 /* LocationManagerNew.swift */; };
 		CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F321D168A3009688C7 /* FirebaseService.swift */; };
 		CE6F29F821D1692E009688C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F29F721D1692E009688C7 /* User.swift */; };
 		CE866594223C52D200B3D39A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE866593223C52D200B3D39A /* GoogleService-Info.plist */; };
@@ -24,6 +34,15 @@
 /* Begin PBXFileReference section */
 		2BB9C18D0215BC3CC13CFBCB /* Pods_CHI_AR_Employees.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHI_AR_Employees.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A018A2573B0F04709202263A /* Pods-CHI-AR-Employees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI-AR-Employees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHI-AR-Employees/Pods-CHI-AR-Employees.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2F0ECA2241896A00F2225A /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		CE2F0ECB2241896A00F2225A /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		CE2F0ECC2241896A00F2225A /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		CE2F0ECE2241896A00F2225A /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		CE2F0ECF2241896A00F2225A /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		CE2F0ED02241896A00F2225A /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		CE2F0ED12241896A00F2225A /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		CE2F0ED22241896A00F2225A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CE2F0ED32241896A00F2225A /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
 		CE3FA65821D102E00091FC9D /* CHI-AR-Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CHI-AR-Employees.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3FA65B21D102E00091FC9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3FA65D21D102E00091FC9D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -34,7 +53,7 @@
 		CE57EAA9222594D800DC6F7F /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		CE57EAAB222594E800DC6F7F /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		CE6F29E721D10501009688C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE6F29F121D141E4009688C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CE6F29F121D141E4009688C7 /* LocationManagerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerNew.swift; sourceTree = "<group>"; };
 		CE6F29F321D168A3009688C7 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CE6F29F721D1692E009688C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE866593223C52D200B3D39A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -68,6 +87,22 @@
 				F94B01D6514F6C46F90B9C47 /* Pods-CHI-AR-Employees.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE2F0EC92241894000F2225A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F0ED02241896A00F2225A /* CGPoint+Extensions.swift */,
+				CE2F0ECC2241896A00F2225A /* CLLocation+Extensions.swift */,
+				CE2F0ECF2241896A00F2225A /* FloatingPoint+Radians.swift */,
+				CE2F0ED22241896A00F2225A /* LocationManager.swift */,
+				CE2F0ECE2241896A00F2225A /* LocationNode.swift */,
+				CE2F0ED12241896A00F2225A /* SceneLocationEstimate.swift */,
+				CE2F0ECB2241896A00F2225A /* SceneLocationEstimate+Extensions.swift */,
+				CE2F0ECA2241896A00F2225A /* SceneLocationView.swift */,
+				CE2F0ED32241896A00F2225A /* SCNVector3+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CE3FA64F21D102DF0091FC9D = {
@@ -174,6 +209,7 @@
 		CE6F29EA21D1054C009688C7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE2F0EC92241894000F2225A /* Helpers */,
 				CE6F29ED21D10571009688C7 /* NetworkService */,
 				CE6F29EC21D1055E009688C7 /* LocationService */,
 				CE6F29EB21D10555009688C7 /* FirebaseService */,
@@ -207,7 +243,7 @@
 		CE6F29F021D141CC009688C7 /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				CE6F29F121D141E4009688C7 /* LocationManager.swift */,
+				CE6F29F121D141E4009688C7 /* LocationManagerNew.swift */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -292,6 +328,7 @@
 				CE866594223C52D200B3D39A /* GoogleService-Info.plist in Resources */,
 				CE3FA66821D102E00091FC9D /* LaunchScreen.storyboard in Resources */,
 				CE3FA66321D102E00091FC9D /* Main.storyboard in Resources */,
+				CE2F0EDE22418EC700F2225A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,13 +396,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2F0EDA2241896A00F2225A /* CGPoint+Extensions.swift in Sources */,
+				CE2F0ED82241896A00F2225A /* LocationNode.swift in Sources */,
 				CE57EAAC222594E800DC6F7F /* ARViewModel.swift in Sources */,
+				CE2F0ED62241896A00F2225A /* CLLocation+Extensions.swift in Sources */,
+				CE2F0EDC2241896A00F2225A /* LocationManager.swift in Sources */,
 				CE57EAAA222594D800DC6F7F /* ARModel.swift in Sources */,
+				CE2F0EDB2241896A00F2225A /* SceneLocationEstimate.swift in Sources */,
 				CE3FA66021D102E00091FC9D /* ARViewController.swift in Sources */,
 				CE3FA65C21D102E00091FC9D /* AppDelegate.swift in Sources */,
+				CE2F0ED52241896A00F2225A /* SceneLocationEstimate+Extensions.swift in Sources */,
+				CE2F0ED42241896A00F2225A /* SceneLocationView.swift in Sources */,
+				CE2F0EDD2241896A00F2225A /* SCNVector3+Extensions.swift in Sources */,
 				CE6F29F421D168A3009688C7 /* FirebaseService.swift in Sources */,
 				CE6F29F821D1692E009688C7 /* User.swift in Sources */,
-				CE6F29F221D141E4009688C7 /* LocationManager.swift in Sources */,
+				CE2F0ED92241896A00F2225A /* FloatingPoint+Radians.swift in Sources */,
+				CE6F29F221D141E4009688C7 /* LocationManagerNew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
